@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ProfitKit</title>
+    <link type="text/css" href="css/main.css" rel="stylesheet">
+</head>
+
+<body>
+
+<section class="slider-section">
+    <div class="wrapper">
+        <ul class="option__list" id="option-list">
+            <li>
+                <button id="option-0" class="option__item option__item_selected" onclick="setSelectedOption(0)">
+                    Популярные товары
+                </button>
+            </li>
+            <li>
+                <button id="option-1" class="option__item" onclick="setSelectedOption(1)">
+                    Недавно купили
+                </button>
+            </li>
+            <li>
+                <button id="option-2" class="option__item" onclick="setSelectedOption(2)">
+                    Вас может заинтересовать
+                </button>
+            </li>
+        </ul>
+        <div class="slider">
+            <button class="arrow arrow_prev" id="arrow_prev"><img src="img/arrow-prev.svg"/></button>
+            <ul class="product-list" id="product-list"></ul>
+            <button class="arrow arrow_next" id="arrow_next"><img src="img/arrow-next.svg"/></button>
+        </div>
+    </div>
+</section>
+
+<script src="./js/products.js"></script>
+<script src="./js/main.js"></script>
+</body>
+</html>
+
